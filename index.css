@@ -1,0 +1,104 @@
+.student-navigation-child {
+  height: 94px;
+  width: 1920px;
+  position: relative;
+  display: none;
+  max-width: 100%;
+  z-index: 0;
+}
+.scholarships {
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+  color: inherit;
+  z-index: 1;
+}
+.documents-wrapper,
+.progress-bar-wrapper,
+.scholarships-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.scholarships-wrapper {
+  padding: var(--padding-lg) 0 0;
+  color: var(--color-darkblue-300);
+}
+.documents-wrapper,
+.progress-bar-wrapper {
+  padding: var(--padding-lgi) 0 0;
+}
+.progress-bar-wrapper {
+  padding: var(--padding-lg) 0 0;
+}
+.donate {
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+  min-width: 84px;
+  z-index: 1;
+}
+.donate-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-lgi) 15px 0 0;
+}
+.image-icon6 {
+  height: 70px;
+  width: 70px;
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 1;
+}
+.office-of-students-welfare-23 {
+  height: 241px;
+  width: 241px;
+  position: absolute;
+  margin: 0 !important;
+  top: -84px;
+  left: 11px;
+  object-fit: cover;
+  z-index: 1;
+}
+.student-navigation {
+  width: 1920px;
+  background-color: var(--color-white);
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 12px var(--padding-26xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: 50px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--font-size-3xl-8);
+  color: var(--color-silver);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 900px) {
+  .student-navigation {
+    flex-wrap: wrap;
+    padding-left: var(--padding-3xl);
+    padding-right: var(--padding-3xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .donate,
+  .scholarships {
+    font-size: var(--font-size-lg);
+  }
+  .student-navigation {
+    gap: var(--gap-6xl);
+  }
+}
